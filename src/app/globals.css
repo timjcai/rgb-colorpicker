@@ -17,21 +17,22 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb)); */
+  background: #D8D6D4;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 
 }
 
 .colorpicker {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  width: 50vw;
+  height: 80vh;
+  width: 60vw;
   background: none;
   align-items: center;
   justify-content: space-between;
