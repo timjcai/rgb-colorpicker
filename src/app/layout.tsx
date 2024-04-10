@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { ThemeProvider } from "./context";
 
 export const metadata: Metadata = {
     title: "RGB Color Picker",
@@ -17,7 +18,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={GeistSans.className}>{children}</body>
+            <body className={GeistSans.className}>
+                <ThemeProvider>{children}</ThemeProvider>
+            </body>
         </html>
     );
 }
