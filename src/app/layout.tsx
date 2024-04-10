@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-    title: "RGB Colorpicker",
+    title: "RGB Color Picker",
     description:
         "A lightweight and user-friendly color picker tool for web development. This repository provides a simple and customizable color selection interface, allowing users to choose and preview colors effortlessly. The tool is built with [mention any libraries/frameworks used] and supports various color formats. Enhance your web projects with easy color integration using this versatile color picker.",
 };
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={GeistSans.className}>{children}</body>
         </html>
     );
 }

@@ -14,9 +14,11 @@ import {
     faCreditCard,
     faCube,
     faListUl,
+    faMoon,
     faNoteSticky,
     faPlus,
     faShop,
+    faSun,
     faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,6 +30,8 @@ type IconProps = {
 
 const iconMapping: { [key in IconType]: IconDefinition } = {
     copy: faCopy,
+    light: faSun,
+    dark: faMoon,
 };
 
 export const Icon: FC<IconProps> = ({ label }) => {
